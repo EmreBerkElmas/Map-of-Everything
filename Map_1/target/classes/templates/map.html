@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>World Map</title>
+
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/pop.css"> <!-- vscode cant find the file but it works -->
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/energySlider.css">
+
+
+</head>
+<body>
+    <h1>World Map
+        
+    <a href="/map" class="button button1">Index</a>
+    
+    <a href="/energyMap" class="button button1">Energy Map</a>
+    
+    <button type="button">Click Me!</button>
+    <button type="button">Click Me!</button>
+</h1>
+    <div id="map" ></div>
+    <div id="blank-space">
+        <div class="slidecontainer">
+            <input type="range" min="1980" max="2021" value="1980" class="slider" id="myRange">
+            <p>Value: <span id="demo"></span></p>
+            <button onclick="sendToBackend()">Send Value to Backend</button>
+
+          </div>
+        <div id="country-name"></div>
+        <div id="country-list"></div>
+
+      
+    </div>
+    
+    
+    <script src="/js/names.js"></script>
+    <script src="/js/slider.js"></script>
+
+
+
+</body>
+</html>

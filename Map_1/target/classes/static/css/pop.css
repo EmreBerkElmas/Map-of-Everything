@@ -1,0 +1,13 @@
+
+#map {
+    width: 80%;
+    height: 100vh;
+    float: left;
+}
+
+#blank-space {
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+    float: left;
+}
